@@ -13,28 +13,32 @@
                 <p> Enter the tasks in the entry box given below and press enter/submit button <br> The task gets added to the list. Click on the 'X' button to remove the task from the list, <br> or simply use remove all button to remove all tasks</p>
             </div>
         </header>
-        <div class= "input-box">
-
-            <fieldset id="addtasks">
-                <legend> Add new tasks </legend>
-                <label>Enter task </label>   
-                <input type="text"
-                      id = "task"
-                      value = "" 
-                      placeholder = "enter task name" /> <br> <br>
-            <button id="enter" > Submit !</button> 
-            <button id="remove-all"> Remove All </button>
-            </fieldset>
-        </div>
-
-        <div class="view-tasks">
-            <fieldset>
-                <legend> Tasks to do ! </legend>
-                    <div id = "todotasks"> </div>
-                        <ul id = "ul">
-                            <!-- List of tasks to be done will be added here -->
-                        </ul>
-            </fieldset>
+        <div class = "content">
+            <div class= "input-box">
+                <br>
+                <fieldset id="addtasks">
+                    <legend> Add new tasks </legend>
+                    <label>Enter task </label>   
+                    <input type="text"
+                        id = "task"
+                        value = "" 
+                        placeholder = "enter task name" /> <br> <br>
+                <button class = "abc" id="enter" > Submit !</button> 
+                <button class = "abc" id="remove-all"> Remove All </button>
+                </fieldset>
+            </div>
+            <br>
+            <div class="view-tasks">
+                <fieldset>
+                    <div class="ul">
+                    <legend> Tasks to do ! </legend>
+                        <div id = "todotasks"> </div>
+                            <ul id = "ul">
+                                <!-- List of tasks to be done will be added here -->
+                            </ul>
+                    </div>
+                </fieldset>
+            </div>
         </div>
         <script src="scripts.js"></script>
     </body>
