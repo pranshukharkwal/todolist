@@ -3,7 +3,7 @@ var item = document.getElementsByTagName("li")
 var input = document.getElementById("task")
 var button = document.getElementById("enter")
 
-button.onclick = function(){
+function abcd(){
 
     if(input.value.length <= 0)
     {
@@ -22,11 +22,22 @@ button.onclick = function(){
         
         dbtn.onclick = function(){
             li.style.display = "none";
-            li.classList.add("delete")
         }
     }
-    
+
     input.value = ""
-    
 }
 
+function checkKeyPress(event){
+    if (event.which ===13) {
+        if(input.value.length > 0){
+            abcd()
+        }
+        else if(input.value.length <= 0) {
+            alert("Cannot add an empty task")
+        }
+    }
+}
+
+input.addEventListener("keypress", checkKeyPress)
+button.addEventListener("click" , abcd)
