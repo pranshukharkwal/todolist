@@ -68,13 +68,15 @@ button:hover{
 }
 
 li > button {
-    
+    padding: 10px 20px;
+	border-radius: 50px;
 	font-weight: normal;
 	background: none;
 	border: none;
-	float: right !important; 
 	color: #025f70;
-	font-weight: 800;
+    font-weight: 800;
+    margin-left: auto;
+    align-self: stretch;
 }
 div.content 
 {
@@ -103,7 +105,6 @@ ul {
 	border-radius: 5px;
     margin-bottom: 10px;
   }
-  
   li::before {
     content: counters(index, ".", decimal-leading-zero);
     font-size: 1.5rem;
@@ -120,7 +121,8 @@ ul {
   }
   
   li:hover {
-	background: rgb(187, 188, 189);
+    background: rgb(187, 188, 189);
+    color:black;
 }
 
   li + li {
