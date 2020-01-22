@@ -3,7 +3,7 @@
     <head>
         <title> To Do List</title>
         <link rel="stylesheet" href="styles.css">
-        <script src="scripts.js"></script>
+        
     </head>
     <body>
         <div class = "top-text">
@@ -17,8 +17,9 @@
                 <label>Enter task </label>   
                 <input type="text"
                       id = "task"
-                      value = "" /> <br> <br>
-            <button type="button" onclick = "getcity()"> Submit !</button> 
+                      value = "" 
+                      placeholder = "enter task name" /> <br> <br>
+            <button id="enter" onclick="createItem()"> Submit !</button> 
             </fieldset>
         </div>
 
@@ -26,9 +27,11 @@
             <fieldset>
                 <legend> Tasks to do ! </legend>
                     <div id = "todotasks"> </div>
-                    <script> viewtasks();</script>
+                        <ul id = "ul">
+                            <!-- List of tasks to be done will be added here -->
+                        </ul>
             </fieldset>
         </div>
-        
+        <script src="scripts.js"></script>
     </body>
 </html>
