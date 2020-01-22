@@ -53,6 +53,7 @@ h3, p {
 }
 
 button.abc {
+    margin:auto;
 	border: none;
 	outline: none;
 	padding: 10px 20px;
@@ -94,6 +95,7 @@ ul {
   
 
   li {
+    font-size: 1rem;
     padding: 10px 20px;
     counter-increment: index; 
     display: flex;
